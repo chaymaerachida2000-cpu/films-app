@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* NAVIGATION */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: black;
+}
+.flex-iteam :hover{
+    color: red;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* SEARCH BOX (Mkhbiya) */
+.search-item {
+    position: relative;
+}
+
+#search-btn {
+    background: white;
+    border: 2px solid red;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-content {
+    display: none; /* Khassha t-koun mkhbiya dima f l-lowel */
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 1000;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Class li katzidha JS bach tban */
+.search-content.active {
+    display: flex !important;
+}
+
+.search-content input {
+    padding: 8px;
+    color: black !important;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#find-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HERO SECTION (Ma-bdeltch l-qyassat) */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('IMG/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+ .watch-btn {
+    background: white;
+    border: 2px solid red;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.watch-btn:hover{
+    background-color: grey;
+}
+
+ .watch-btn a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* GALLERY (Ma-bdeltch l-qyassat) */
+.films-gallery {
+    padding: 50px;
+}
+
+.films-gallery h1 {
+    margin: 30px 0;
+}
+
+
+
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 250px; /* Khallit l-qyass dyalk */
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid red;
+}
+.gallery-grid img:hover{
+    transform: scale(1.1); /* K-t-kebber t-tswira b 10% */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Zidna chwiya d d-dlāl */
+}
+/* FOOTER */
+footer {
+    padding: 50px;
+    text-align: center;
+}
+
+.socials a {
+    color: red;
+    font-size: 2rem;
+    margin: 0 15px;
+}
